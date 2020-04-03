@@ -3,6 +3,7 @@ from django.http import JsonResponse
 import string
 import secrets
 import random
+from firstapp.models import Movie,ApiUsers
 
 class checkJson():
 
@@ -43,3 +44,21 @@ class ApiKey():
         char_set = string.ascii_letters + string.punctuation
         urand = random.SystemRandom()
         return ''.join([urand.choice(char_set) for _ in range(self.ApiLengthC)])
+
+
+class ClientExists():
+
+    def __init__(self):
+        return None
+
+
+    def ValidateUser(self, json_data):
+        response_data = {}
+        try:
+            usuario = json_data['user']
+            obj = ApiUsers.objects.get(usuario)
+            return True, obj
+        except NameError:
+            response_data['result'] = 'error'
+            response_data['message'] = 'USER OR PASSWORD NOT FOUND'
+            return False, JsonResponse(response_data, status=401)
