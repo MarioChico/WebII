@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{{ title }}</title>
+    <script src="{% static 'script.js' %}"></script>
+</head>
+
+<body>
+
+  <div class="menu_top">
+  		<img class="letras_logo" src="{% static "images/image.png" %}">
+
+      <div id="sections">
+  			<nav id="primary_nav">
+  				<ul id="primary_ul">
+  					<li>
+  						<a class="sections menu_white" href="dos.html">
+  							<span>Nosotros</span>
+  						</a>
+  						<a class="sections menu_white" href="https://www.facebook.com/" target="_blank">
+  							<span>Facebook</span>
+  						</a>
+  						<a class="sections menu_white" href="https://www.instagram.com/" target="_blank">
+  							<span>Instagram</span>
+  						</a>
+  						<a class="sections menu_white" href="">
+  							<span>Contáctanos</span>
+  						</a>
+  					</li>
+  				</ul>
+  			</nav>
+  		</div>
+  </div>

@@ -1,0 +1,164 @@
+.body{
+  padding: 0px
+}
+
+ul {
+	font-size: 14px;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.menu_top{
+    height: 86px;
+    background-color: #ffa71a;
+    width: auto;
+    position: relative;
+}
+
+.letras_logo{
+    width: 160px;
+    height: 86px;
+    position: absolute;
+    left: 15px;
+    z-index: 6;
+    display: block;
+}
+
+#sections{
+	text-align: right;
+	z-index: 3;
+	width: 100%;
+	height: auto;
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    background-attachment: fixed;
+    right: 15px;
+}
+
+#primary_nav{
+    display: block;
+    width: 60%;
+    float: right;
+}
+
+#primary_ul{
+    list-style: none;
+    padding-right: 50px;
+}
+
+.sections{
+	font-size: 1.1rem;
+	color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.menu_white{
+    color: #fff;
+}
+
+#who_we_are{
+    width: 100%;
+    height: auto;
+    background-color:#f174b8;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.who_img{
+    width: 50%;
+    background-color: #000000;
+    height: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url('../static/images/imagen_9.png');
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.who_container{
+    width: 50%;
+    float: right;
+    position: relative;
+    height: auto;
+}
+
+.who_header{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transform: translateY(60%);
+    -webkit-transform: translateY(60%);
+    -ms-transform: translateY(60%);
+}
+
+.who_txt{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    width: 80%;
+    margin: 50px auto 0px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+input[type=submit] {
+    background-color: #2374b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+  background-color: #116624;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}

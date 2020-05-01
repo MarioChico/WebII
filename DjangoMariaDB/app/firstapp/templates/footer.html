@@ -1,0 +1,20 @@
+
+<div class="container">
+<form class="contact-form" action="email.php" method="post" name="contact" id="contact" >
+<input type="text" onkeypress='validatetext(event)' name="name" placeholder="Nombre completo" required>
+<input type="text" onkeypress='validate(event)' id="tel_number" name="telephone" placeholder="Número de teléfono" required>
+<input type="email" name="mail" placeholder="Correo Electrónico"required>
+<input type="text" name="destiny" placeholder="¿A donde quieres viajar?" required>
+
+<select id="media" name="media" required>
+  <option value="how" disabled selected>¿Cómo desea ser contactado?</option>
+  <option value="Llamada">Llamada</option>
+  <option value="Whatsapp">Whatsapp</option>
+  <option value="Correo">Correo</option>
+</select>
+
+<textarea name="message" placeholder="Mensaje"></textarea>
+<input type="submit" name="submit" value="Enviar mail">
+
+</body>
+</html>
